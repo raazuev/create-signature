@@ -2,9 +2,11 @@ const INSTRUCTION_IMG_URL =
   "https://mlattach.datacloudmail.ru/sig2/1BB7749C21593C5DBBBE7C70CD9854EC237054CE?cn=mailrusigimg_I0m5IIFM.jpg&ct=image%2Fjpeg&expires=1772488904&from=e.mail.ru&m=RCerqpSuUc-LhaoXuTh0EA&t=CAB85EC4&x-email=d.mezenin%40digital-lab.ru";
 
 const LOGO_PREVIEW = {
-  dlgames: "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743645/dlgames_1_ppwrpv.png",
+  dlgames:
+    "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743645/dlgames_1_ppwrpv.png",
   dlp: "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743645/dlp_lfc3ho.png",
-  studio: "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743646/studio_invqbc.png",
+  studio:
+    "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743646/studio_invqbc.png",
 };
 
 const LOGO_LABEL = {
@@ -411,7 +413,7 @@ function renderInstructions() {
             <div class="step-content">
                 <p class="step-title">Скопируй и вставь подпись</p>
                 <div class="step-desc">
-                    <p>Нажми кнопку ниже, затем открой <a href="https://e.mail.ru/settings/userinfo" target="_blank" rel="noopener noreferrer">настройки подписи mail.ru</a> и вставь (Ctrl+V). Подпись вставится с серым кружком вместо фото.</p>
+                    <p>Нажми кнопку ниже, затем открой <a href="https://e.mail.ru/settings/general#signature" target="_blank" rel="noopener noreferrer">настройки подписи mail.ru</a> и вставь (Ctrl+V) ВАЖНО: Логитип не будет виден в подписи, но в письмах логотип отобразиться. Подпись вставится с серым кружком вместо фото.</p>
                 </div>
                 <button class="btn ${state.copied ? "btn-copied" : "btn-primary"}" id="copySignatureBtn" style="margin-top: 0.75rem;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
