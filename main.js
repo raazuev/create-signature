@@ -190,7 +190,7 @@ function showToast(message, type = "success") {
   }, 3000);
 }
 
-function buildSignatureHtml(formData, logos, placeholderDataUri, sc) {
+function buildSignatureHtml(formData, logos, placeholderDataUri, sc, logoDataUris) {
   const link = (href, text) =>
     `<a href="${href}" style="color:#999999;text-decoration:none;">${text}</a>`;
 
@@ -218,7 +218,8 @@ function buildSignatureHtml(formData, logos, placeholderDataUri, sc) {
   const logosHtml = logos
     .map((key) => {
       const { w, h } = sc.logos[key];
-      return `<img src="${LOGO_PREVIEW[key]}" width="${w}" height="${h}" alt="${LOGO_LABEL[key]}" style="display:block;border:0;outline:none;margin-top:8px;" />`;
+      const src = logoDataUris?.[key] || LOGO_PREVIEW[key];
+      return `<img src="${src}" width="${w}" height="${h}" alt="${LOGO_LABEL[key]}" style="display:block;border:0;outline:none;margin-top:8px;" />`;
     })
     .join("");
 
@@ -303,6 +304,7 @@ function handleCopySignature() {
     activeLogosList,
     state.placeholderUri,
     SIZE_CONFIGS[state.designSize],
+    state.logoDataUris,
   );
 
   try {
