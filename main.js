@@ -4,9 +4,9 @@ const INSTRUCTION_IMG_URL =
 const STATIC_LOGO_BASE = new URL("./img/", window.location.href).href;
 
 const LOGO_PREVIEW = {
-  dlgames: STATIC_LOGO_BASE + "dlgames.svg",
-  dlp: STATIC_LOGO_BASE + "dlp.svg",
-  studio: STATIC_LOGO_BASE + "studio.svg",
+  dlgames: STATIC_LOGO_BASE + "dlgames.png",
+  dlp: STATIC_LOGO_BASE + "dlp.png",
+  studio: STATIC_LOGO_BASE + "studio.png",
 };
 
 const LOGO_LABEL = {
