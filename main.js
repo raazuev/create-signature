@@ -29,7 +29,7 @@ const SIZE_CONFIGS = {
       dlgames: { w: 160, h: 64 },
       dlp: { w: 112, h: 48 },
       studio: { w: 90, h: 48 },
-      dl: { w: 90, h: 80 },
+      dl: { w: 90, h: 98 },
     },
   },
   large: {
@@ -41,7 +41,7 @@ const SIZE_CONFIGS = {
       dlgames: { w: 210, h: 84 },
       dlp: { w: 149, h: 64 },
       studio: { w: 120, h: 64 },
-      dl: { w: 126, h: 116 },
+      dl: { w: 126, h: 138 },
     },
   },
 };
