@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Генератор подписи для почты</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="toastContainer" class="toast-container"></div>
+
+    <div class="container">
+      <div class="header">
+        <h1>Генератор подписи для почты</h1>
+        <p>Подготовь фото и подпись за пару кликов</p>
+
+        <div class="mode-selector">
+          <button class="mode-btn active" data-mode="mailru">Mail.ru</button>
+          <button class="mode-btn" data-mode="apple">Apple Mail</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="space-y-6">
+          <div class="card">
+            <div class="space-y-5">
+              <div>
+                <label class="field-label">Фотография</label>
+                <div class="photo-upload-area">
+                  <div class="photo-preview" id="photoPreview">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div style="flex: 1">
+                    <button class="btn" id="uploadBtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                        ></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                      </svg>
+                      <span id="uploadBtnText">Загрузить фото</span>
+                    </button>
+                    <p class="help-text" id="photoHelp">
+                      Любое фото — обрежется в круг с прозрачным фоном.
+                    </p>
+                  </div>
+                </div>
+                <input
+                  type="file"
+                  id="fileInput"
+                  accept="image/png,image/jpeg,image/webp"
+                />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label">Имя Фамилия</label>
+                <input
+                  type="text"
+                  class="field-input"
+                  id="nameInput"
+                  placeholder="Иванов Иван"
+                  value="Мезенин Дмитрий"
+                />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label">Должность</label>
+                <input
+                  type="text"
+                  class="field-input"
+                  id="positionInput"
+                  placeholder="Менеджер проектов"
+                  value="Head of Design"
+                />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label">Телефон</label>
+                <input
+                  type="text"
+                  class="field-input"
+                  id="phoneInput"
+                  placeholder="+7 999 999 99 99"
+                  value="+7 965 534 92 80"
+                />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label">Telegram (личный)</label>
+                <input
+                  type="text"
+                  class="field-input"
+                  id="telegramInput"
+                  placeholder="t.me/username"
+                  value="t.me/dmezenin"
+                />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label">Telegram-канал</label>
+                <input
+                  type="text"
+                  class="field-input"
+                  id="channelInput"
+                  placeholder="t.me/channelname"
+                  value="t.me/digitallabchannel"
+                />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label">Сайт</label>
+                <input
+                  type="text"
+                  class="field-input"
+                  id="websiteInput"
+                  placeholder="example.com"
+                  value="games.digital-lab.ru"
+                />
+              </div>
+
+              <div>
+                <label class="field-label">Логотипы</label>
+                <div class="logo-grid" id="logoGrid"></div>
+              </div>
+
+              <div>
+                <label class="field-label">Размер подписи</label>
+                <div class="size-selector">
+                  <button class="size-btn active" data-size="normal">
+                    Нормальный
+                  </button>
+                  <button class="size-btn" data-size="large">Крупный</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="section-title">Как вставить подпись</h2>
+            <div class="space-y-6" id="instructionsContainer"></div>
+          </div>
+        </div>
+
+        <div class="preview-container">
+          <p class="preview-label">Предпросмотр подписи</p>
+          <div class="preview-box" id="previewBox"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+
