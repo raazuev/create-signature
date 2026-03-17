@@ -3,19 +3,21 @@ const INSTRUCTION_IMG_URL =
 
 const LOGO_PREVIEW = {
   dlgames:
-    "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743645/dlgames_1_ppwrpv.png",
-  dlp: "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743645/dlp_lfc3ho.png",
+    "https://res.cloudinary.com/dyd9o0von/image/upload/v1773747858/logo_games_anysxt.png",
+  dlp: "https://res.cloudinary.com/dyd9o0von/image/upload/v1773747858/logo_dlp_pc4pwj.png",
   studio:
-    "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743646/studio_invqbc.png",
+    "https://res.cloudinary.com/dyd9o0von/image/upload/v1773747859/logo_studio_zyitut.png",
+  dl: "https://res.cloudinary.com/dyd9o0von/image/upload/v1773747858/logo_dl_yrolht.png",
 };
 
 const LOGO_LABEL = {
   dlgames: "DL Games",
   dlp: "DLP",
   studio: "Studio",
+  dl: "DL",
 };
 
-const LOGO_ORDER = ["dlgames", "dlp", "studio"];
+const LOGO_ORDER = ["dlgames", "dlp", "studio", "dl"];
 
 const SIZE_CONFIGS = {
   normal: {
@@ -27,6 +29,7 @@ const SIZE_CONFIGS = {
       dlgames: { w: 160, h: 64 },
       dlp: { w: 112, h: 48 },
       studio: { w: 90, h: 48 },
+      dl: { w: 100, h: 48 },
     },
   },
   large: {
@@ -38,6 +41,7 @@ const SIZE_CONFIGS = {
       dlgames: { w: 210, h: 84 },
       dlp: { w: 149, h: 64 },
       studio: { w: 120, h: 64 },
+      dl: { w: 133, h: 64 },
     },
   },
 };
@@ -66,6 +70,7 @@ let state = {
     dlgames: "",
     dlp: "",
     studio: "",
+    dl: "",
   },
 };
 
