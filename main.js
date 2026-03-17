@@ -413,7 +413,7 @@ function renderInstructions() {
             <div class="step-content">
                 <p class="step-title">Скопируй и вставь подпись</p>
                 <div class="step-desc">
-                    <p>Нажми кнопку ниже, затем открой <a href="https://e.mail.ru/settings/general#signature" target="_blank" rel="noopener noreferrer">настройки подписи mail.ru</a> и вставь (Ctrl+V) ВАЖНО: Логитип не будет виден в подписи, но в письмах логотип отобразиться. Подпись вставится с серым кружком вместо фото.</p>
+                    <p>Нажми кнопку ниже, затем открой <a href="https://e.mail.ru/settings/general#signature" target="_blank" rel="noopener noreferrer">настройки подписи mail.ru</a> и вставь (Ctrl+V) ВАЖНО: Логитип не будет виден в подписи, но в письмах логотип отобразится. Подпись вставится с серым кружком вместо фото и альтернативным текстом вместо логотипа.</p>
                 </div>
                 <button class="btn ${state.copied ? "btn-copied" : "btn-primary"}" id="copySignatureBtn" style="margin-top: 0.75rem;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
