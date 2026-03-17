@@ -1,12 +1,10 @@
 const INSTRUCTION_IMG_URL =
   "https://mlattach.datacloudmail.ru/sig2/1BB7749C21593C5DBBBE7C70CD9854EC237054CE?cn=mailrusigimg_I0m5IIFM.jpg&ct=image%2Fjpeg&expires=1772488904&from=e.mail.ru&m=RCerqpSuUc-LhaoXuTh0EA&t=CAB85EC4&x-email=d.mezenin%40digital-lab.ru";
 
-const STATIC_LOGO_BASE = new URL("./img/", window.location.href).href;
-
 const LOGO_PREVIEW = {
-  dlgames: STATIC_LOGO_BASE + "dlgames.png",
-  dlp: STATIC_LOGO_BASE + "dlp.png",
-  studio: STATIC_LOGO_BASE + "studio.png",
+  dlgames: "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743645/dlgames_1_ppwrpv.png",
+  dlp: "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743645/dlp_lfc3ho.png",
+  studio: "https://res.cloudinary.com/dyd9o0von/image/upload/v1773743646/studio_invqbc.png",
 };
 
 const LOGO_LABEL = {
