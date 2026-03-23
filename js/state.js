@@ -1,0 +1,25 @@
+export const state = {
+  mode: "mailru",
+  designSize: "normal",
+  formData: {
+    name: "Мезенин Дмитрий",
+    position: "Head of Design",
+    phone: "+7 965 534 92 80",
+    telegram: "t.me/dmezenin",
+    channel: "t.me/digitallabchannel",
+    website: "games.digital-lab.ru",
+  },
+  photoPreview: null,
+  photoBlobUrl: null,
+  photoDataUri: null,
+  photoUploadedUrl: "",
+  selectedLogos: new Set(["dlgames"]),
+  copied: false,
+  placeholderUri: "",
+  logoDataUris: {
+    dlgames: "",
+    dlp: "",
+    studio: "",
+    dl: "",
+  },
+};
